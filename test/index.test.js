@@ -40,7 +40,7 @@ describe('Get currency symbol [getCurrencySymbol]', function () {
 
 });
 
-describe('Get currency symbol from ISO 3166-1 alpha-2 [getCurrencySymbol]', function () {
+describe('Get currency symbol from ISO 3166-1 alpha-2 [getCurrencySymbolFromIso2]', function () {
 
   it('should get currency symbol from lowercase ISO 3166-1 alpha-2', function () {
     chai.assert.strictEqual(getCurrencySymbolFromIso2('us'), '$');

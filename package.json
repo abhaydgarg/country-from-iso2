@@ -1,6 +1,6 @@
 {
   "name": "country-from-iso2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get country data from ISO 3166-1 alpha-2, which are two-letter country codes defined in ISO 3166-1, part of the ISO 3166 standard published by the International Organization for Standardization (ISO).",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "mocha": "^5.0.1"
   },
   "dependencies": {
-    "@abhaydgarg/is": "^0.1.0",
+    "@abhaydgarg/is": "^1.0.0",
     "currency-symbol-map": "^4.0.3",
     "world-countries": "^2.0.0"
   }

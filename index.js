@@ -1,6 +1,6 @@
 const countries = require('world-countries');
 const getSymbolFromCurrency = require('currency-symbol-map');
-const { isString, isEmpty } = require('@abhaydgarg/is');
+const { isEmpty } = require('@abhaydgarg/is');
 
 /**
  * get all countries
@@ -34,7 +34,7 @@ function getCountries(include = []) {
  * @returns {object|undefined} undefined if country is not found.
  */
 function getCountry(iso2) {
-  if (isString(iso2) && isEmpty(iso2, 'whitespace')) {
+  if (isEmpty(iso2)) {
     return undefined;
   }
   iso2 = (iso2.trim()).toUpperCase();
@@ -49,7 +49,7 @@ function getCountry(iso2) {
  * @returns {string|undefined} undefined if currency symbol is not found.
  */
 function getCurrencySymbol(currency) {
-  if (isString(currency) && isEmpty(currency, 'whitespace')) {
+  if (isEmpty(currency)) {
     return undefined;
   }
   return getSymbolFromCurrency(currency.trim());
